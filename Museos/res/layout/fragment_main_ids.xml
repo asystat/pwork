@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context="com.crashapps.artexperience.MainActivity$PlaceholderFragment" >
+
+    <com.flaviofaria.kenburnsview.KenBurnsView
+            android:id="@+id/img2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ids" />
+    
+    <ListView 
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@android:color/transparent"
+		android:dividerHeight="20dp"
+		android:paddingLeft="20dp"
+		android:paddingRight="20dp"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:background="#00000000"
+    >
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_marginTop="10dp"
+    	android:background="@drawable/museum_box"
+        >
+    
+    <View 
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/mi_topbar"
+        />
+
+    
+    
+    <Button
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/circle_id"
+        android:layout_width="64dip"
+        android:layout_height="64dip"
+        android:src="@drawable/small"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/circlebutton"
+        android:text="20"
+        android:textSize="30sp"
+        android:textColor="#FFFFFF"
+        />
+    
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/topbar"
+                android:layout_alignTop="@+id/topbar"
+                android:layout_toRightOf="@+id/circle_id"
+                android:gravity="center_vertical"
+                android:text="Title"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+                      
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/circle_id"
+                android:layout_below="@+id/topbar"
+                android:gravity="center_vertical"
+                android:text="Starting activity com.crashapps.artexperience.MainActivity on device BH90SHQ416 [2014-10-08 21:55:31 - Museos] ActivityManager: Starting: Intent { act=android.intent.action.MAIN cat=[android.intent."
+                android:maxLines="3"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp" />
+    </RelativeLayout>
+    
+        <ImageView
+        android:id="@+id/favourites"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="30dip"
+        android:layout_height="30dip"
+        android:src="@drawable/star_a"
+        android:layout_marginRight="5dp"
+        />
+    
+</RelativeLayout>

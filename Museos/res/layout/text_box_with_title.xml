@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@drawable/black_transparent_box"
+    android:padding="10dp"
+    >
+    
+    <ImageView android:id="@+id/title_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/info"
+        />
+    
+        <TextView android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@+id/title_icon"
+        android:layout_alignBottom="@+id/title_icon"
+        android:layout_toRightOf="@+id/title_icon"
+        android:textSize="18sp"
+        android:text="Title"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:gravity="left|bottom"
+        android:layout_marginLeft="5dp"
+        android:textColor="#FFFFFF"
+        />
+        
+        <TextView android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_icon"
+        android:textSize="15sp"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        android:gravity="center_vertical"
+        android:textColor="#E5E5E5"
+        android:layout_marginTop="5dp"
+        />
+
+</RelativeLayout>
